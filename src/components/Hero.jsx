@@ -40,10 +40,9 @@ const Hero = () => {
                 start: 'top top',
                 end: 'bottom top',
                 scrub: true,
-                // pin:true
             }
-        }).to('.right-leaf', { y: 200 }, 0)
-            .to('.left-leaf', { y: -200 }, 0)
+        }).to('.right-leaf', { y: 300 }, 0)
+            .to('.left-leaf', { y: -300 }, 0)
 
         const start = isMobile ? 'top 50%' : 'center 60%';
         const end = isMobile ? '120% top' : 'bottom top';
@@ -97,7 +96,7 @@ const Hero = () => {
             <div className='video absolute inset-0'>
                 <video
                     ref={videoRef}
-                    src="/videos/input.mp4" muted
+                    src="/videos/output.mp4" muted
                     playsInline
                     preload='auto'
                 ></video>
